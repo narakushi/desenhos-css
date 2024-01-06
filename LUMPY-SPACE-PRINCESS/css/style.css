@@ -29,6 +29,10 @@ body{
     position: absolute;
 }
 
+.shapes:nth-child(2){
+    box-shadow: -1px -4px 0 1px;
+}
+
 .shapes:nth-child(1){
     width: 170px;
     height: 280px;
@@ -37,6 +41,7 @@ body{
     position: relative;
     bottom: 80px;
     border-radius: 10rem;
+    border: 3px solid var(--gray);
 }
 
 .shapes:nth-child(2){
@@ -173,7 +178,7 @@ body{
     transform: rotate(35deg);
 }
 
-.group-eyes{
+.face .group-eyes{
     position: absolute;
   
 }
@@ -201,4 +206,41 @@ body{
     background: var(--gray);
     margin: 16px 48px 0;
     border-radius: 15rem;
+}
+
+.face .mouth{
+    width: 50px;
+    height: 35px;
+    background: var(--gray);
+    position: absolute;
+    border-radius: 50%;
+    top: 90px;
+    right: 175px;
+}
+
+.face .mouth::before{
+    width: 25px;
+    height: 10px;
+    background: var(--purple);
+    position: absolute;
+    content: '';
+    border-radius: 45%;
+    top: 23px;
+    left: 18px;
+    rotate: -10deg;    
+}
+
+.face .mouth::after{
+    width: 50px;
+    height: 55px;
+    border: 2px solid var(--gray);
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 48px;
+    border-radius: 45%;
+    rotate: 0deg;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
 }
