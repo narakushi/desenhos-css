@@ -27,6 +27,7 @@ body{
     height: 600px;
     display: flex;
     position: absolute;
+    margin-top: 180px;
 }
 
 .shapes:nth-child(2){
