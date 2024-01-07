@@ -27,11 +27,12 @@ body{
     height: 600px;
     display: flex;
     position: absolute;
-    margin-top: 180px;
+    background-color: #ba96c6;
+    z-index: -2;;
 }
 
-.shapes:nth-child(2){
-    box-shadow: -1px -4px 0 1px;
+.shapes{
+    border: 3px solid var(--gray);
 }
 
 .shapes:nth-child(1){
@@ -42,7 +43,7 @@ body{
     position: relative;
     bottom: 80px;
     border-radius: 10rem;
-    border: 3px solid var(--gray);
+    top: 12px;
 }
 
 .shapes:nth-child(2){
@@ -52,6 +53,9 @@ body{
     position: absolute;
     border-radius: 10rem;
     rotate: -70deg;
+    top: 100px;
+    border: 3px solid var(--gray);
+    border-bottom-color: transparent;
 }
 
 
@@ -63,37 +67,46 @@ body{
     left: 250px;
     rotate: 70deg;
     border-radius: 10rem;
+    top: 100px;
+    border-bottom-color: transparent;
 }
 
 .shapes:nth-child(4){
-    width: 170px;
+    width: 210px;
     height: 450px;
     background: var(--purple);
     rotate: 90deg;
     border-radius: 15rem;
-    left: 120px;
+    left: 104px;
     position: absolute;
+    top: 80px;
+    border-right-color: transparent;
+    border-left-color: transparent;
 }
 
 .shapes:nth-child(5){
-    width: 100px;
-    height: 150px;
+    width: 160px;
+    height: 170px;
     background: var(--purple);
     border-radius: 15rem;
     position: absolute;
-    top: 240px;
+    top: 340px;
     rotate: 30deg;
+    border-top-color: transparent;
+    z-index: -1;
 }
 
 .shapes:nth-child(6){
-    width: 100px;
+    width: 120px;
     height: 180px;
     background: var(--purple);
     border-radius: 15rem;
     position: absolute;
-    top: 270px;
-    rotate: 15deg;
+    top: 370px;
+    rotate: 20deg;
     left: 80px;
+    border-top-color: transparent ;
+    border-left-color: transparent;
 }
 
 .shapes:nth-child(7){
@@ -101,10 +114,13 @@ body{
     height: 190px;
     background: var(--purple);
     position: absolute;
-    top: 290px;
+    top: 390px;
     rotate: 4deg;
     border-radius: 15rem;
     left: 160px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
 
 .shapes:nth-child(8){
@@ -113,32 +129,42 @@ body{
     background: var(--purple);
     border-radius: 15rem;
     position: absolute;
-    top: 300px;
+    top: 400px;
     left: 200px;
     rotate: -15deg;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
 
 .shapes:nth-child(9){
-    width: 100px;
+    width: 120px;
     height: 190px;
     border-radius: 15rem;
     position: absolute;
     background: var(--purple);
-    top: 275px;
+    top: 375px;
     left: 240px;
     rotate: -20deg;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
 
 .shapes:nth-child(10){
-    width: 100px;
-    height: 150px;
+    width: 160px;
+    height: 170px;
     background: var(--purple);
     border-radius: 15rem;
     position: absolute;
-    top: 240px;
-    left: 300px;
-    rotate: -35deg;
+    top: 340px;
+    left: 270px;
+    rotate: -30deg;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    z-index: -1;
 }
+
 
 .star{
     position: absolute;
@@ -152,7 +178,7 @@ body{
 
     font-size: 4rem;
 
-    top: -5rem;
+    top: 6rem;
     left: 19rem;
 
 }
@@ -179,9 +205,20 @@ body{
     transform: rotate(35deg);
 }
 
+.face{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
 .face .group-eyes{
     position: absolute;
-  
+    width: 300px;
+    height: 55px;
+    top: 140px;
+    left: 80px;
+    background: #8e7cbe;
+    z-index: 1;
 }
 
 .group-eyes .eyebrows-box,
@@ -189,8 +226,6 @@ body{
     display: flex;
     position: absolute;
     justify-content: space-between;
-    top: 50px;
-    right: 85px;
 }
 
 .eyebrows-box .eyebrow{
@@ -215,7 +250,7 @@ body{
     background: var(--gray);
     position: absolute;
     border-radius: 50%;
-    top: 90px;
+    top: 200px;
     right: 175px;
 }
 
